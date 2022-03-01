@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="mainSite.css">
+    <script>
+        function checkAnswers() {
+
+        }
+    </script>
+</head>
+
+<body>
+<nav>
+    <!--    TODO fix navbar-->
+    <ul>
+        <li><a href="template.html">Home</a></li>
+        <li><a href="">?? (Variables & Data Types)</a></li>
+        <li><a href="">?? (Sequences)</a></li>
+        <li><a href="powersOfTwo.html">Powers of 2 (Loops)</a></li>
+        <li><a href="quiz.html">Quiz (Decisions)</a></li>
+        <li><a href="">Binary Conversion (Modules)</a></li>
+        <li><a href="">?? (Data Structures)</a></li>
+        <li><a href="">Javascript Authentication</a></li>
+    </ul>
+</nav>
+
+<h1>Quiz!</h1>
+
+<div class="grid-container">
+    <div class="banner">
+        <p>This page serves as a quiz for some of the topics that are presented on this site.</p>
+        <p>Answer the questions as truthfully as you can.</p>
+    </div>
+    <div>
+        <p>Questions</p>
+        <form>
+            <p>
+                <label for="inputOne">Question 1</label>
+                <input type='text' size=25 id="inputOne" name='inputOne'>
+            </p>
+            <p>
+                <label for="inputTwo">Question 2</label>
+                <input type='text' size=25 id="inputTwo" name='inputTwo'>
+            </p>
+            <p>
+                <label for="inputThree">Question 3</label>
+                <input type='text' size=25 id="inputThree" name='inputThree'>
+            </p>
+            <button onclick="checkAnswers()">Check Answers</button>
+        </form>
+    </div>
+    <div>
+        <p>Answers</p>
+        <p><label id="outputOne"></label></p>
+        <p><label id="outputTwo"></label></p>
+        <p><label id="outputThree"></label></p>
+    </div>
+
+
+</div>
+
+</body>
+
+</html>
