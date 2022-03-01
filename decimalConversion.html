@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Decimal Conversion</title>
+    <link rel="stylesheet" href="mainSite.css">
+    <script>
+        function convertDecimal() {
+            alert("running");
+        }
+    </script>
+</head>
+
+<body>
+<nav>
+    <!--    TODO fix navbar-->
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">?? (Variables & Data Types)</a></li>
+        <li><a href="">?? (Sequences)</a></li>
+        <li><a href="powersOfTwo.html">Powers of 2 (Loops)</a></li>
+        <li><a href="">Quiz (Decisions)</a></li>
+        <li><a href="">Binary Conversion (Modules)</a></li>
+        <li><a href="">?? (Data Structures)</a></li>
+        <li><a href="">Javascript Authentication</a></li>
+    </ul>
+</nav>
+
+<h1>Decimal Conversion</h1>
+
+<div class="grid-container">
+    <div class="banner">
+        <p>
+            Converting from Decimal to Binary (and other number systems) is needed for various reasons.
+        </p>
+        <p>
+            This page will convert the binary number you enter into both Decimal and Hexadecimal.
+        </p>
+        <p>
+            In the HTMl file, there will eventually be a number of functions (modules).<br>
+            The button will call <strong>convertBinary()</strong> which prompt the user for the binary number through an
+            prompt() command.
+        </p>
+        <p>
+            <strong>convertDecimal()</strong> will call convertToBinary(var decimalInput) and then call
+            convertToHexadecimal(var decimalInput)<br>
+            <strong>convertToBinary()</strong> - converts binaryInput into Decimal (base 10) and updates the relevant
+            HTML tag.<br>
+            <strong>convertToHexadecimal(var binaryInput)</strong> - converts binaryInput into Hexadecimal (base 16) and will return the value back to convertDecimal to update the relevant HTML.<br>
+        </p>
+        <p>
+            You may research how to do the actual converting through this video. <br><iframe width="560" height="315" src="https://www.youtube.com/embed/Xzi4-26vdOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+
+        <p>You can check your output to ensure it's correct <a
+                href="https://www.mathsisfun.com/binary-decimal-hexadecimal-converter.html">here</a>.</p>
+
+
+    </div>
+    <div>
+        <button onclick="convertDecimal()">Convert to Binary and Hexadecimal</button>
+    </div>
+    <div>
+        <p id="outputBinary">Output Binary</p>
+        <p id="outputHexadecimal">Output Hexadecimal</p>
+
+    </div>
+</div>
+
+</body>
+
+</html>
