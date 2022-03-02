@@ -2,45 +2,59 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Home</title>
-  <link rel="stylesheet" href="mainSite.css">
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="mainSite.css">
+
+    <script>
+        function twoToThePowerOf() {
+
+        }
+    </script>
 </head>
 
 <body>
 <nav>
-  <!--    TODO fix navbar-->
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="">?? (Variables & Data Types)</a></li>
-    <li><a href="">?? (Sequences)</a></li>
-    <li><a href="powersOfTwo.html">Powers of 2 (Loops)</a></li>
-    <li><a href="quiz.html">Quiz (Decisions)</a></li>
-    <li><a href="">Binary Conversion (Modules)</a></li>
-    <li><a href="">?? (Data Structures)</a></li>
-    <li><a href="">Javascript Authentication</a></li>
-  </ul>
+    <!--    TODO fix navbar-->
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">?? (Variables & Data Types)</a></li>
+        <li><a href="">?? (Sequences)</a></li>
+        <li><a href="powersOfTwo.html">Powers of 2 (Loops)</a></li>
+        <li><a href="quiz.html">Quiz (Decisions)</a></li>
+        <li><a href="">Binary Conversion (Modules)</a></li>
+        <li><a href="">?? (Data Structures)</a></li>
+        <li><a href="">Javascript Authentication</a></li>
+    </ul>
 </nav>
 
-<h1>Binary Number Systems</h1>
+<h1>Calculator</h1>
 
 <div class="grid-container">
-  <div class="banner">
-    <p>Welcome to this site, which will teach you the Binary Number System!</p>
-    <p>Use the navigation above to learn about the different topics.</p>
-    <p>On each page there will be a section for the purpose of the page, and area for you to input some information and another space for the result to appear!</p>
-    <p>The pages and topics are as follows. One each of these pages in your tutorial, you should focus on the topics listed:</p>
-    <p>Bits & Bytes - Variable & Data Types</p>
-    <p>?? - Sequences</p>
-    <p>Quiz - Decisions</p>
-    <p>Powers of Two - Loops</p>
-    <p>Binary Conversion - Modularisation</p>
-    <p>?? - Data Structures</p>
-    <p>?? - Javascript Authentication</p>
+    <div class="banner">
+        <p>
+            This page will take in one integer input, calculate 2 to the power of that number, and finally output the
+            result.
+        </p>
+        <p>
+            This is a simple demonstration of a sequence in Software Development.
+        </p>
 
-  </div>
-  <div><p>Example Input</p></div>
-  <div><p>Example Output</p></div>
+    </div>
+    <div>
+        <form>
+            <p>
+                <label for="powerValue">Power value</label>
+                <input type='text' size=25 id="powerValue" name='powerValue'>
+            </p>
+
+
+            <button onclick="twoToThePowerOf()">Run Calculation</button>
+        </form>
+    </div>
+    <div>
+        <p id="powerResult">The Answer will appear here.</p>
+    </div>
 
 
 </div>
