@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Decimal Conversion</title>
+    <link rel="stylesheet" href="mainSite.css">
+    <script>
+        function authentication() {
+            alert("running");
+        }
+    </script>
+</head>
+
+<body>
+<nav>
+    <!--    TODO fix navbar-->
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">?? (Variables & Data Types)</a></li>
+        <li><a href="">?? (Sequences)</a></li>
+        <li><a href="powersOfTwo.html">Powers of 2 (Loops)</a></li>
+        <li><a href="">Quiz (Decisions)</a></li>
+        <li><a href="">Binary Conversion (Modules)</a></li>
+        <li><a href="">?? (Data Structures)</a></li>
+        <li><a href="">Javascript Authentication</a></li>
+    </ul>
+</nav>
+
+<h1>Javascript Authentication</h1>
+
+<div class="grid-container">
+    <div class="banner">
+        <p>
+            This page will demonstrate some basic front-end authentication. Not great security, however <i>some</i>
+            security.
+        </p>
+        <p>
+            When the user clicks "Log in", the username and passwords entered will be read by the authentication()
+            function and checked against the correct values below.
+        </p>
+        <p>
+            If the user enters correctly, the output is updated with "Success" in green.
+        </p>
+        <p>
+            If the user enters incorrectly, the output is updated with "Failed" in red.
+        </p>
+
+        <p>
+            The correct username is <strong>admin</strong>.<br>
+            The correct password is <strong>admin</strong>.
+        </p>
+        <p>
+            <u>Note for students</u>. In your tutorial, you should also demonstrate why this is not ideal security, and some other possibilities for better security of usernames and passwords.
+        </p>
+    </div>
+    <div>
+        <form>
+            <p>
+                <label for="uname">Username</label>
+                <input type='text' id="uname" name='uname'>
+            </p>
+            <p>
+                <label for="pwd">Password</label>
+                <input type='password' id="pwd" name='pwd'>
+            </p>
+            <button onclick="authentication()">Log In</button>
+        </form>
+    </div>
+    <div>
+        <p id="outputStatus">Output</p>
+
+    </div>
+</div>
+
+</body>
+
+</html>
