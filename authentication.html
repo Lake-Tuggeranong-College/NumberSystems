@@ -6,7 +6,7 @@
     <title>Decimal Conversion</title>
     <link rel="stylesheet" href="mainSite.css">
     <script>
-        function authentication() {
+        function authentication(form) {
             alert("running");
         }
     </script>
@@ -63,7 +63,7 @@
                 <label for="pwd">Password</label>
                 <input type='password' id="pwd" name='pwd'>
             </p>
-            <button onclick="authentication()">Log In</button>
+            <button onclick="authentication(this.form)">Log In</button>
         </form>
     </div>
     <div>
