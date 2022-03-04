@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="mainSite.css">
 
     <script>
-        function twoToThePowerOf() {
+        function twoToThePowerOf(form) {
 
         }
     </script>
@@ -41,14 +41,14 @@
 
     </div>
     <div>
-        <form>
+        <form onsubmit="return false">
             <p>
                 <label for="powerValue">Power value</label>
                 <input type='text' size=25 id="powerValue" name='powerValue'>
             </p>
 
 
-            <button onclick="twoToThePowerOf()">Run Calculation</button>
+            <button onclick="twoToThePowerOf(this.form)">Run Calculation</button>
         </form>
     </div>
     <div>

@@ -6,7 +6,7 @@
     <title>Quiz</title>
     <link rel="stylesheet" href="mainSite.css">
     <script>
-        function checkAnswers() {
+        function checkAnswers(form) {
 
         }
     </script>
@@ -35,7 +35,7 @@
     </div>
     <div>
         <p>Questions</p>
-        <form>
+        <form onsubmit="return false">
             <p>
                 <label for="inputOne">Question 1</label>
                 <input type='text' size=25 id="inputOne" name='inputOne'>
@@ -48,7 +48,7 @@
                 <label for="inputThree">Question 3</label>
                 <input type='text' size=25 id="inputThree" name='inputThree'>
             </p>
-            <button onclick="checkAnswers()">Check Answers</button>
+            <button onclick="checkAnswers(this.form)">Check Answers</button>
         </form>
     </div>
     <div>
