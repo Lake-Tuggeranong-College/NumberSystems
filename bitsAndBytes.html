@@ -37,7 +37,13 @@
         <p>Below, enter individual bits, which will be converted into a decimal number. For instance 10000000 will
             output 128, because the 1 is in the 128th position.</p>
         <img src="images/binary.png">
-    </div>
+        <p style="text-align:left"><strong>Student Note:</strong> Store the individual bits (0 or 1) into an array (e.g.
+            <code>bits</code>). Then you can run the
+            command: <code>let num = +bits.join("")</code>, where <code>bits</code> is the name of the array.
+            <br>The command converts the array of integers into an integer.
+            <br>With the example above the array <code>1,0,0,0,0,0,0,0</code> would be converted into the integer:
+            <code>10000000</code>. Then this number can be converted from binary into decimal. This can be researched.
+        </p></div>
     <div>
         <form onsubmit="return false">
             <p>Enter the individual bits that make up a byte. One bit per box.</p>
